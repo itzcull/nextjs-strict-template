@@ -1,5 +1,3 @@
-import { NextApiHandler } from 'next'
-
-const destroy: NextApiHandler = (req, res) => {}
+const destroy = ({}) => {}
 
 export default destroy

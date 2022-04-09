@@ -1,5 +1,3 @@
-import { NextApiHandler } from 'next'
-
-const post: NextApiHandler = (req, res) => {}
+const post = ({}) => {}
 
 export default post

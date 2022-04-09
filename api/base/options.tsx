@@ -1,5 +1,3 @@
-import { NextApiHandler } from 'next'
-
-const options: NextApiHandler = (req, res) => {}
+const options = ({}) => {}
 
 export default options

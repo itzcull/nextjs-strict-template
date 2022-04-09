@@ -1,5 +1,3 @@
-import { NextApiHandler } from 'next'
-
-const patch: NextApiHandler = (req, res) => {}
+const patch = ({}) => {}
 
 export default patch

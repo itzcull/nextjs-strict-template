@@ -1,5 +1,3 @@
-import { NextApiHandler } from 'next'
-
-const put: NextApiHandler = (req, res) => {}
+const put = ({}) => {}
 
 export default put

@@ -1,5 +1,3 @@
-import { NextApiHandler } from 'next'
-
-const head: NextApiHandler = (req, res) => {}
+const head = ({}) => {}
 
 export default head
