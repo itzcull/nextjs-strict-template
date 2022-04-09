@@ -17,6 +17,12 @@
       "styles/*": [
         "./styles/*"
       ],
+      "contexts/*": [
+        "./contexts/*"
+      ],
+      "controllers/*":[
+        "./controllers/*"
+      ],
       "pages/*":["./pages/*"]
     } /* Specify a set of entries that re-map imports to additional lookup locations. */,
     "typeRoots": [

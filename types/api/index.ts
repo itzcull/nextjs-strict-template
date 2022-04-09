@@ -1,4 +1,4 @@
-export const METHODS = [
+export const ALL_METHODS = [
   'GET',
   'POST',
   'PUT',
@@ -8,10 +8,12 @@ export const METHODS = [
   'OPTIONS',
 ] as const
 
-export declare type HttpMethods = typeof METHODS[number]
+export declare type AllHttpMethods = typeof ALL_METHODS[number]
+
+export const ALLOWED_METHODS: AllHttpMethods[] = ['GET']
 
 export type ContextFunction<Body = any, Output = any> = (
   params: Record<string, string>,
-  querys: Record<string, string>,
+  querys: Record<string, string | string[]>,
   payload: Body
 ) => Output
