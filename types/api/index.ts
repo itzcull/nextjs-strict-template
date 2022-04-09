@@ -1,4 +1,4 @@
-export const HttpMethods = [
+export const METHODS = [
   'GET',
   'POST',
   'PUT',
@@ -7,3 +7,5 @@ export const HttpMethods = [
   'HEAD',
   'OPTIONS',
 ] as const
+
+export declare type HttpMethods = typeof METHODS[number]

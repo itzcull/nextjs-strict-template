@@ -1,30 +1,38 @@
+import { Index } from 'api'
 import { NextApiHandler } from 'next'
-import { HttpMethods } from 'types/api'
+import { HttpMethods, METHODS } from 'types/api'
 
 export const handler: NextApiHandler = (req, res) => {
   const { method } = req
+  let result
 
-  switch (method as typeof HttpMethods[number]) {
+  switch (method as HttpMethods) {
     case 'GET':
-      res.status(200).json({})
+      result = Index.get(req, res)
+      res.status(200).json(result)
       break
     case 'POST':
-      res.status(200).json({})
+      result = Index.post(req, res)
+      res.status(200).json(result)
       break
     case 'PUT':
-      res.status(200).json({})
+      result = Index.post(req, res)
+      res.status(200).json(result)
       break
     case 'DELETE':
-      res.status(200).json({})
+      result = Index.post(req, res)
+      res.status(200).json(result)
       break
     case 'PATCH':
-      res.status(200).json({})
+      result = Index.post(req, res)
+      res.status(200).json(result)
       break
     case 'OPTIONS':
-      res.status(200).json({})
+      result = Index.post(req, res)
+      res.status(200).json(result)
       break
     default:
-      res.setHeader('Allow', HttpMethods)
+      res.setHeader('Allow', METHODS.join(', '))
       res.status(405).end(`Method ${method} Not Allowed`)
   }
 }
