@@ -1,3 +1,5 @@
-const options = ({}) => {}
+import { ContextFunction } from 'types/api'
 
-export default options
+const index: ContextFunction = (params, querys, payload) => {}
+
+export default index

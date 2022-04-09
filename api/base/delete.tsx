@@ -1,3 +1,7 @@
-const destroy = ({}) => {}
+import { ContextFunction } from 'types/api'
 
-export default destroy
+const index: ContextFunction = (params, querys, payload) => {
+  return {}
+}
+
+export default index

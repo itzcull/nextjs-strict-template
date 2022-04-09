@@ -1,3 +1,5 @@
-const patch = ({}) => {}
+import { ContextFunction } from 'types/api'
 
-export default patch
+const index: ContextFunction = (params, querys, payload) => {}
+
+export default index

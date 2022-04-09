@@ -1,3 +1,7 @@
-const head = ({}) => {}
+import { ContextFunction } from 'types/api'
 
-export default head
+const index: ContextFunction = (params, querys, payload) => {
+  return {}
+}
+
+export default index

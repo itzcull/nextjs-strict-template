@@ -3,16 +3,16 @@ import { NextApiHandler } from 'next'
 import { HttpMethods, METHODS } from 'types/api'
 
 export const handler: NextApiHandler = (req, res) => {
-  const { method } = req
+  const { method, body } = req
   let result
 
   switch (method as HttpMethods) {
     case 'GET':
-      result = Index.get(req, res)
+      result = Index.get(body)
       res.status(200).json(result)
       break
     case 'POST':
-      result = Index.post(req, res)
+      result = Index.post(body)
       res.status(200).json(result)
       break
     case 'PUT':

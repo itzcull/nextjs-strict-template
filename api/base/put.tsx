@@ -1,3 +1,7 @@
-const put = ({}) => {}
+import { ContextFunction } from 'types/api'
 
-export default put
+const index: ContextFunction = (params, querys, payload) => {
+  return {}
+}
+
+export default index

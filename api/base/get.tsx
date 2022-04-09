@@ -1,3 +1,7 @@
-const get = ({}) => {}
+import { ContextFunction } from 'types/api'
 
-export default get
+const index: ContextFunction = (params, querys, payload) => {
+  return {}
+}
+
+export default index
